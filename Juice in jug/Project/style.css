@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(80deg, #ffc107 40%, #fff 40%);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(0, -50%);
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+.content h2{
+    font-size: 32px;
+    color: #444;
+}
+
+.content h4{
+    color: #fff;
+    font-size: 52px;
+}
+
+.cup{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    border: 10px solid#fff;
+    transform: translate(0, -50%);
+    border-top: 5px solid transparent;
+    border-radius: 15px;
+    background: url(juice.png);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-repeat: repeat-x;
+    animation: animate 8s linear infinite;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+
+.cup::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    border: 20px solid rgba(0,0,0,0.1);
+    right: -120px;
+    top: 50px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-left: 10px solid transparent;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+/* animate is the name of the animation */
+
+@keyframes animate{
+    0%{
+        background-position: 0 300px;
+    }
+
+    10%{
+        background-position: 0 280px;
+    }
+
+    40%{
+        background-position: 1000px 150px;
+    }
+
+    80%{
+        background-position: 2000px 5px;
+    }
+
+    100%{
+        background-position: 0 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
